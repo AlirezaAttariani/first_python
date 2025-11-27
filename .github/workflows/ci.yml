@@ -11,6 +11,6 @@ jobs:
       with: 
        python-version: '3.x'
     - name: Run main program 
-      run: cd first_python && python main.py
+      run: cd Python_Project && python main.py
     - name: Run tests
-      run: cd first_python && python test.py
+      run: cd Python_Project && python test.py
