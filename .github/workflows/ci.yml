@@ -5,7 +5,7 @@ jobs:
     runs-on : ubuntu-latest
     steps :
     - name: Dowmload code
-      uses: actions/checkout@64
+      uses: actions/checkout@v4
     - name: Setup python 
       uses: actions/setup-python@v4
       with: 
