@@ -11,6 +11,6 @@ jobs:
       with: 
        python-version: '3.x'
     - name: Run main program 
-      run: cd first_python && pyrhon main.py
+      run: cd first_python && python main.py
     - name: Run tests
-      run: cd first_python && pyrhon test.py
+      run: cd first_python && python test.py
