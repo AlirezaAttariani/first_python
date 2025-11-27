@@ -1,0 +1,16 @@
+name : Python CI
+on: [push]
+jobs: 
+  build:
+    runs-on : ubuntu-latest
+    steps :
+    - name: Dowmload code
+      uses: actions/checkout@64
+    - name: Setup python 
+      uses: actions/setup-python@v4
+      with: 
+       python-version: '3.9'
+    - name: Run main program 
+      run: cd first_python && pyrhon main.py
+    - name: Run tests
+      run: cd first_python && pyrhon test.py
